@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개 - 랜드컨설팅</title>
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Malgun Gothic', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            color: #fff;
+            font-size: 28px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .logo span { color: #3498db; }
+        
+        .contact-btn {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h1 {
+            font-size: 42px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .company-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+        
+        .info-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .info-card h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-container nav { display: none; }
+            .company-info { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">LAND<span>CONSULTING</span></a>
+            <nav style="display: flex; gap: 30px; align-items: center;">
+                <a href="index.html" style="color: white; text-decoration: none; font-weight: 500;">홈</a>
+                <a href="about.html" style="color: #3498db; text-decoration: none; font-weight: 500;">회사소개</a>
+                <a href="projects.html" style="color: white; text-decoration: none; font-weight: 500;">분양정보</a>
+                <a href="services.html" style="color: white; text-decoration: none; font-weight: 500;">서비스</a>
+                <a href="contact.html" style="color: white; text-decoration: none; font-weight: 500;">상담문의</a>
+            </nav>
+            <a href="tel:010-8119-7322" class="contact-btn">📞 상담전화</a>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h1>🏢 회사소개</h1>
+                <p>서울·수도권 토지투자 전문 랜드컨설팅</p>
+            </div>
+            
+            <div class="company-info">
+                <div class="info-card">
+                    <h3>🎯 회사 비전</h3>
+                    <p>서울·수도권 토지투자 시장에서 권리분석과 호재발굴을 통해 
+                    고객에게 안전하고 수익성 높은 투자 기회를 제공하는 
+                    전문 컨설팅 기업이 되겠습니다.</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>💪 핵심 강점</h3>
+                    <p><strong>24년간의 풍부한 경험</strong><br>
+                    권리분석 및 호재발굴 전문성<br>
+                    공매·경매·일반거래 모든 채널 활용<br>
+                    서울·수도권 집중 전문화</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>🔍 전문 분야</h3>
+                    <p>• 토지 권리분석 및 검증<br>
+                    • 개발호재 발굴 및 평가<br>
+                    • 공매·경매 토지 발굴<br>
+                    • 일반거래 우수 물건 소싱<br>
+                    • 투자 컨설팅 및 법무지원</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>🏆 차별화 포인트</h3>
+                    <p><strong>권리분석 완료된 안전성</strong><br>
+                    확실한 개발호재 보유 토지만 선별<br>
+                    착한 가격으로 높은 가성비 제공<br>
+                    24년 경력 전문가 직접 상담</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>📞 대표 정보</h3>
+                    <p><strong>24년간의 토지분양업 경험</strong><br>
+                    서울·수도권 토지시장 전문가<br>
+                    권리분석 및 호재발굴 전문<br>
+                    직접 상담 및 현장 안내</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>🎯 현재 프로젝트</h3>
+                    <p><strong>상계동 공매 특가 프로젝트</strong><br>
+                    권리분석 완료된 안전성<br>
+                    7호선 연장, 수락지구 개발 호재<br>
+                    착한 가격으로 빠른 소진</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p><strong>LAND CONSULTING</strong> | 서울·수도권 토지투자 전문</p>
+            <p>📞 010-8119-7322 | 📧 landconsult2025@naver.com</p>
+            <p style="margin-top: 20px; font-size: 14px; opacity: 0.7;">
+                ※ 투자에는 위험이 따를 수 있으니 신중한 검토 후 결정하시기 바랍니다.<br>
+                ※ 정확한 정보는 전화후 방문상담을 통해 확인할수 있습니다.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

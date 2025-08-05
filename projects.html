@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>분양정보 - 랜드컨설팅</title>
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Malgun Gothic', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            color: #fff;
+            font-size: 28px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .logo span { color: #3498db; }
+        
+        .contact-btn {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h1 {
+            font-size: 42px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .project-header {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .project-content {
+            padding: 30px;
+        }
+        
+        .project-features {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .project-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .status-active {
+            background: #e74c3c;
+            color: white;
+        }
+        
+        .status-planning {
+            background: #f39c12;
+            color: white;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-container nav { display: none; }
+            .project-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">LAND<span>CONSULTING</span></a>
+            <nav style="display: flex; gap: 30px; align-items: center;">
+                <a href="index.html" style="color: white; text-decoration: none; font-weight: 500;">홈</a>
+                <a href="about.html" style="color: white; text-decoration: none; font-weight: 500;">회사소개</a>
+                <a href="projects.html" style="color: #3498db; text-decoration: none; font-weight: 500;">분양정보</a>
+                <a href="services.html" style="color: white; text-decoration: none; font-weight: 500;">서비스</a>
+                <a href="contact.html" style="color: white; text-decoration: none; font-weight: 500;">상담문의</a>
+            </nav>
+            <a href="tel:010-8119-7322" class="contact-btn">📞 상담전화</a>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h1>🏆 분양정보</h1>
+                <p>권리분석 완료된 서울·수도권 프리미엄 토지</p>
+            </div>
+            
+            <div style="background: #fff3cd; border: 1px solid #ffeaa7; padding: 20px; border-radius: 10px; margin: 20px 0; text-align: center;">
+                <p style="color: #856404; margin: 0; font-size: 16px;">
+                    <strong>📢 분양정보 안내</strong><br>
+                    • <strong>현재 실제 분양중:</strong> 상계동 공매 특가 프로젝트만 진행 중입니다.<br>
+                    • <strong>기타 지역:</strong> 권리분석을 통한 예상 투자처로, 향후 분양 예정지입니다.<br>
+                    • <strong>정확한 정보:</strong> 전화 후 방문상담을 통해 확인 가능합니다.
+                </p>
+            </div>
+            
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h2>🚨 상계동 공매 특가</h2>
+                        <div class="status-badge status-active">현재 분양중</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>권리분석을 통해 확보한 호재 확실한 토지!</h3>
+                        <ul class="project-features">
+                            <li>🏢 위치: 서울 노원구 상계동</li>
+                            <li>🚇 교통: 7호선 연장 진행 중 (도봉산~옥정)</li>
+                            <li>🏗️ 개발: 창동상계 신경제중심지</li>
+                            <li>💰 특가: 공매 특가로 엄청 저렴</li>
+                            <li>⚡ 소진: 착한 가격으로 빠른 소진</li>
+                        </ul>
+                        <a href="tel:010-8119-7322" class="btn-primary">📞 상담문의</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h2>🌟 의정부 호평지구</h2>
+                        <div class="status-badge status-planning">향후 예정</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>GTX-C 노선 개발 호재</h3>
+                        <ul class="project-features">
+                            <li>🏢 위치: 경기 의정부시</li>
+                            <li>🚇 교통: GTX-C 노선 예정</li>
+                            <li>🏗️ 개발: 민간공원 개발계획</li>
+                            <li>💰 특징: 권리분석 진행 중</li>
+                            <li>⏰ 상태: 향후 분양 예정</li>
+                        </ul>
+                        <a href="tel:010-8119-7322" class="btn-primary">📞 문의하기</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h2>🏙️ 하남 감일지구</h2>
+                        <div class="status-badge status-planning">향후 예정</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>5호선 연장 및 개발호재</h3>
+                        <ul class="project-features">
+                            <li>🏢 위치: 경기 하남시</li>
+                            <li>🚇 교통: 5호선 연장 예정</li>
+                            <li>🏗️ 개발: 감일지구 개발계획</li>
+                            <li>💰 특징: 권리분석 진행 중</li>
+                            <li>⏰ 상태: 향후 분양 예정</li>
+                        </ul>
+                        <a href="tel:010-8119-7322" class="btn-primary">📞 문의하기</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h2>🌅 김포 한강신도시</h2>
+                        <div class="status-badge status-planning">향후 예정</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>GTX-D 노선 및 한강 접근성</h3>
+                        <ul class="project-features">
+                            <li>🏢 위치: 경기 김포시</li>
+                            <li>🚇 교통: GTX-D 노선 계획</li>
+                            <li>🏗️ 개발: 한강신도시 계획</li>
+                            <li>💰 특징: 권리분석 진행 중</li>
+                            <li>⏰ 상태: 향후 분양 예정</li>
+                        </ul>
+                        <a href="tel:010-8119-7322" class="btn-primary">📞 문의하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p><strong>LAND CONSULTING</strong> | 서울·수도권 토지투자 전문</p>
+            <p>📞 010-8119-7322 | 📧 landconsult2025@naver.com</p>
+            <p style="margin-top: 20px; font-size: 14px; opacity: 0.7;">
+                ※ 투자에는 위험이 따를 수 있으니 신중한 검토 후 결정하시기 바랍니다.<br>
+                ※ 정확한 정보는 전화후 방문상담을 통해 확인할수 있습니다.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

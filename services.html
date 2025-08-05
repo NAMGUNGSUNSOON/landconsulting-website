@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서비스 - 랜드컨설팅</title>
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Malgun Gothic', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            color: #fff;
+            font-size: 28px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .logo span { color: #3498db; }
+        
+        .contact-btn {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h1 {
+            font-size: 42px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        .service-features {
+            list-style: none;
+            margin: 20px 0;
+            text-align: left;
+        }
+        
+        .service-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-container nav { display: none; }
+            .services-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">LAND<span>CONSULTING</span></a>
+            <nav style="display: flex; gap: 30px; align-items: center;">
+                <a href="index.html" style="color: white; text-decoration: none; font-weight: 500;">홈</a>
+                <a href="about.html" style="color: white; text-decoration: none; font-weight: 500;">회사소개</a>
+                <a href="projects.html" style="color: white; text-decoration: none; font-weight: 500;">분양정보</a>
+                <a href="services.html" style="color: #3498db; text-decoration: none; font-weight: 500;">서비스</a>
+                <a href="contact.html" style="color: white; text-decoration: none; font-weight: 500;">상담문의</a>
+            </nav>
+            <a href="tel:010-8119-7322" class="contact-btn">📞 상담전화</a>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h1>🛠️ 전문 서비스</h1>
+                <p>24년 경력 전문가의 체계적인 토지투자 컨설팅</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>권리분석 서비스</h3>
+                    <p>토지의 법적 권리관계를 철저히 분석하여 투자 리스크를 최소화합니다.</p>
+                    <ul class="service-features">
+                        <li>• 토지이용계획 확인</li>
+                        <li>• 개발제한구역 검토</li>
+                        <li>• 도시계획시설 확인</li>
+                        <li>• 토지거래허가구역 검토</li>
+                        <li>• 각종 규제사항 검증</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>호재발굴 서비스</h3>
+                    <p>미래 개발계획과 교통 인프라를 분석하여 투자 가치를 극대화합니다.</p>
+                    <ul class="service-features">
+                        <li>• 교통 인프라 계획 분석</li>
+                        <li>• 도시개발사업 조사</li>
+                        <li>• 신도시 개발계획 검토</li>
+                        <li>• 지역 개발호재 발굴</li>
+                        <li>• 투자 수익성 분석</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏘️</div>
+                    <h3>토지분양 전문</h3>
+                    <p>공매·경매·일반거래 모든 채널을 통해 우수한 토지를 제공합니다.</p>
+                    <ul class="service-features">
+                        <li>• 공매 토지 발굴 및 분양</li>
+                        <li>• 경매 토지 전문 상담</li>
+                        <li>• 일반거래 우수 물건 소싱</li>
+                        <li>• 서울·수도권 집중 전문화</li>
+                        <li>• 착한 가격 공급</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">💬</div>
+                    <h3>투자 컨설팅</h3>
+                    <p>개인별 투자 목표와 자금 규모에 맞는 맞춤형 컨설팅을 제공합니다.</p>
+                    <ul class="service-features">
+                        <li>• 투자 목표 설정 상담</li>
+                        <li>• 자금 계획 수립 지원</li>
+                        <li>• 리스크 관리 전략</li>
+                        <li>• 세무 최적화 방안</li>
+                        <li>• 투자 타이밍 조언</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🗺️</div>
+                    <h3>현장답사 서비스</h3>
+                    <p>전문가와 함께하는 현장답사로 토지의 실제 상황을 정확히 파악합니다.</p>
+                    <ul class="service-features">
+                        <li>• 전문가 동행 현장답사</li>
+                        <li>• 주변 환경 및 접근성 확인</li>
+                        <li>• 개발 진행상황 점검</li>
+                        <li>• 실제 활용 가능성 검토</li>
+                        <li>• 현장 사진 및 보고서 제공</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">⚖️</div>
+                    <h3>법무지원 서비스</h3>
+                    <p>토지 거래 과정에서 발생할 수 있는 법적 이슈를 전문적으로 지원합니다.</p>
+                    <ul class="service-features">
+                        <li>• 계약서 검토 및 작성</li>
+                        <li>• 등기 관련 업무 지원</li>
+                        <li>• 토지 관련 법규 상담</li>
+                        <li>• 분쟁 예방 컨설팅</li>
+                        <li>• 전문 변호사 연계</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p><strong>LAND CONSULTING</strong> | 서울·수도권 토지투자 전문</p>
+            <p>📞 010-8119-7322 | 📧 landconsult2025@naver.com</p>
+            <p style="margin-top: 20px; font-size: 14px; opacity: 0.7;">
+                ※ 투자에는 위험이 따를 수 있으니 신중한 검토 후 결정하시기 바랍니다.<br>
+                ※ 정확한 정보는 전화후 방문상담을 통해 확인할수 있습니다.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
